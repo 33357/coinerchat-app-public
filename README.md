@@ -22,54 +22,22 @@ coinerchat App端开源信息
 
 ```
 coinerchat-app-public
-├── babel.config.js
-├── LICENSE                                     //开源协议
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── README.md                                   //说明文件
-├── src                                         //源代码
-│   ├── App.vue                                 //应用生命周期
-│   ├── components                              //额外组件
-│   ├── css                                     //css文件
-│   │   └── chat.scss                           //chat页面css
-│   ├── index.html                              //html模板
-│   ├── main.js                                 //uniapp入口文件
-│   ├── manifest.json                           //uniapp配置
-│   ├── pages                                   //页面文件
-│   │   ├── home                                //首页页面
-│   │   │   ├── chat.vue                        //chat页面
-│   │   │   └── home.vue                        //home页面
-│   │   └── open                                //全局页面
-│   │       ├── businessCard.vue                //businessCard页面
-│   │       └── login.vue                       //login页面
-│   ├── pages.json                              //页面配置
-│   ├── static                                  //资源文件
-│   │   ├── iconfont                            //字体文件
-│   │   └── image                               //图片文件
-│   ├── store                                   //vuex
-│   │   ├── extend                              //扩展功能
-│   │   │   ├── avatar.js                       //头像生成
-│   │   │   ├── contractABI.js                  //智能合约ABI
-│   │   │   ├── log.js                          //日志处理
-│   │   │   ├── math.js                         //计算封装
-│   │   │   └── uniapp.js                       //uniappAPI封装
-│   │   ├── index.js                            //vuex入口文件
-│   │   ├── model                               //model
-│   │   │   ├── home                            
-│   │   │   │   ├── chat.js                     //chat页面model
-│   │   │   │   └── home.js                     //home页面model
-│   │   │   └── open
-│   │   │       ├── businessCard.js             //businessCard页面model
-│   │   │       └── login.js                    //login页面model
-│   │   └── net                                 //网络功能
-│   │       ├── httpAPI.js                      //API封装
-│   │       ├── web3Provider.js                 //web3提供商封装
-│   │       └── websocket.js                    //websocket封装
-│   ├── uni.scss                                //uniapp默认css
-│   └── uview-ui                                //uview组件
-├── tsconfig.json
-└── yarn.lock
+├─public
+│  └─static
+│      ├─background
+│      ├─pages
+│      └─token
+└─src
+    ├─components
+    ├─const
+    ├─router
+    ├─store
+    │  └─modules
+    │      ├─app
+    │      └─chat
+    ├─theme
+    └─web3
+        └─contracts
 ```
 
 ## 安装说明
@@ -101,4 +69,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 开源协议
 
-[MIT](LICENSE)
+[APACHE 2.0](LICENSE)
